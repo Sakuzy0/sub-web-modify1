@@ -882,7 +882,7 @@ export default {
         clientType: "",
         customBackend: "https://api.v1.mk/sub?",
         shortType: "https://v1.mk/short",
-        remoteConfig: "https://raw.githubusercontent.com/Sakuzy0/sub-web-modify/master/2.ini",
+        remoteConfig: "https://raw.githubusercontent.com/Sakuzy0/sub-web-modify/master/jingjian.ini",
         excludeRemarks: "",
         includeRemarks: "",
         filename: "",
