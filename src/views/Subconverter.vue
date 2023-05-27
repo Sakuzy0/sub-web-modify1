@@ -880,7 +880,7 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: "https://api.v1.mk/sub?",
+        customBackend: "http://127.0.0.1:25500/sub?",
         shortType: "https://v1.mk/short",
         remoteConfig: "https://raw.githubusercontent.com/Sakuzy0/sub-web-modify/master/jingjian.ini",
         excludeRemarks: "",
@@ -893,7 +893,7 @@ export default {
         nodeList: false,
         extraset: false,
         tls13: false,
-        udp: false,
+        udp: true,
         xudp: false,
         tfo: false,
         sort: false,
