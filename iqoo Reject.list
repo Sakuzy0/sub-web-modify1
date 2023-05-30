@@ -1,0 +1,5 @@
+# NAME: iqoo Reject
+# TOTAL: 16
+- PROCESS-NAME,com.iqoo.secure
+- PROCESS-NAME,com.android.packageinstaller
+- DOMAIN-SUFFIX,umeng.com
