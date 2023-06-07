@@ -2,4 +2,5 @@
 # TOTAL: 16
 PROCESS-NAME,com.iqoo.secure
 PROCESS-NAME,com.android.packageinstaller
+DOMAIN,adxlog.vivo.com.cn
 DOMAIN-SUFFIX,umeng.com
