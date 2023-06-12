@@ -37,7 +37,6 @@ dns:
   fake-ip-range: 198.18.0.1/16 
   fake-ip-filter: #fakeip 过滤，配置不使用fake-ip的域名
     - "*.lan"
-    - localhost.ptlogin2.qq.com
     - +.srv.nintendo.net
     - "*.battlenet.com.cn"
     - "*.battlenet.com"
