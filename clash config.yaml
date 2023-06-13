@@ -136,7 +136,6 @@ rules: #分流规则
   - DOMAIN-SUFFIX,sina.lt,DIRECT
   - DOMAIN-SUFFIX,549.tv,DIRECT
   - DOMAIN-SUFFIX,download.nvidia.com,DIRECT
-  - DOMAIN-KEYWORD,ipv6,DIRECT
   - PROCESS-NAME,coodesker-x64.exe,REJECT
   - PROCESS-NAME,2345PicViewer.exe,REJECT
   - RULE-SET,Lan,DIRECT
