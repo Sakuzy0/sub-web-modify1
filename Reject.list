@@ -4,3 +4,7 @@ PROCESS-NAME,com.iqoo.secure
 PROCESS-NAME,com.android.packageinstaller
 DOMAIN,adxlog.vivo.com.cn
 DOMAIN-SUFFIX,umeng.com
+DOMAIN-SUFFIX,az.appstore.vivo.com.cn
+DOMAIN-SUFFIX,isecure.vivo.com.cn
+DOMAIN-SUFFIX,prt-stsdk.vivo.com.cn
+DOMAIN-SUFFIX,stinmmtn.vivo.com.cn
