@@ -9,4 +9,4 @@ DOMAIN-SUFFIX,isecure.vivo.com.cn
 DOMAIN-SUFFIX,prt-stsdk.vivo.com.cn
 DOMAIN-SUFFIX,stinmmtn.vivo.com.cn
 DOMAIN-SUFFIX,avlyun.com
-IP-CIDR,220.181.128.0/24,
+IP-CIDR,220.181.128.0/24
