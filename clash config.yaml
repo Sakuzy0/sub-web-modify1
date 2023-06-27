@@ -10,7 +10,7 @@
 # @ClashDownload     https://github.com/Fndroid/clash_for_windows_pkg/releases
 # @Thanks            @ddgksf2013, @blackmatrix7, @Fndroid, @Anti
 # @Attention         𝐏𝐥𝐞𝐚𝐬𝐞 𝐮𝐬𝐞 𝐭𝐡𝐞 𝐥𝐚𝐭𝐞𝐬𝐭 𝐯𝐞𝐫𝐬𝐢𝐨𝐧 𝐨𝐟 𝐂𝐥𝐚𝐬𝐡𝐟𝐨𝐫𝐖𝐢𝐧𝐝𝐨𝐰𝐬
-# @ConfigVersion     1.0
+# @ConfigVersion     1.1
 #==========================================
 port: 7890           # HTTP 代理端口
 socks-port: 7891     # Socks 端口
@@ -27,7 +27,7 @@ external-controller: 127.0.0.1:9090 # RESTful API 监听地址
 dns:
   enable: true       # 关闭将使用系统 DNS
   ipv6: false        # 关闭 IPV6, false 将返回 AAAA 的空结果
-  listen: 0.0.0.0:53 # dns 监听
+  listen: 127.0.0.1:53 # dns 监听
 # 用于解析 nameserver，fallback 以及其他DNS服务器配置的，DNS 服务域名
   default-nameserver: # 默认 DNS 服务 
     - 223.5.5.5
@@ -37,6 +37,7 @@ dns:
   fake-ip-range: 198.18.0.1/16 
   fake-ip-filter: #fakeip 过滤，配置不使用fake-ip的域名
     - "*.lan"
+    - localhost.ptlogin2.qq.com
     - +.srv.nintendo.net
     - "*.battlenet.com.cn"
     - "*.battlenet.com"
@@ -56,11 +57,10 @@ dns:
     - localhost.ptlogin2.qq.com
     - WORKGROUP
   nameserver:        # 默认域名解析服务器
-    - tls://dot.pub
-    - https://dns.alidns.com/dns-query
+     - https://doh.pub/dns-query
+     - https://dns.alidns.com/dns-query
   fallback:          # 国外 DNS 服务器, 后备域名解析服务器
     - https://cloudflare-dns.com/dns-query
-    - https://dns.google/dns-query
     - https://dns.alidns.com/dns-query
 #当 nameserver 域名的 IP 查询 geoip 库为 CN 时，不使用 fallback 中的 DNS 查询结果
   fallback-filter: 
@@ -121,9 +121,13 @@ rule-providers: # 分流规则集
   ProxyLite:   {<<: *a6, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/ProxyLite/ProxyLite.yaml,                path: ./ruleset/ProxyLite.yaml    }
 
 rules: #分流规则
+  - DOMAIN-SUFFIX,gstatic.com,🌏 全球加速
+  - DOMAIN-SUFFIX,services.googleapis.cn,🌏 全球加速
   - DOMAIN-SUFFIX,spotify.com,🇺🇲 美国节点
   - DOMAIN-SUFFIX,exhentai.org,🇺🇲 美国节点
   - DOMAIN-SUFFIX,javdb.com,🇭🇰 香港节点
+  - DOMAIN-SUFFIX,volcengineapi.com,DIRECT
+  - DOMAIN-SUFFIX,api.codelife.cc,DIRECT
   - DOMAIN-SUFFIX,cm.steampowered.com,DIRECT
   - DOMAIN-SUFFIX,steamserver.net,DIRECT
   - DOMAIN-SUFFIX,steamusercontent.com,DIRECT
@@ -136,6 +140,7 @@ rules: #分流规则
   - DOMAIN-SUFFIX,sina.lt,DIRECT
   - DOMAIN-SUFFIX,549.tv,DIRECT
   - DOMAIN-SUFFIX,download.nvidia.com,DIRECT
+  - DOMAIN-SUFFIX,sentry.io,REJECT
   - PROCESS-NAME,coodesker-x64.exe,REJECT
   - PROCESS-NAME,2345PicViewer.exe,REJECT
   - RULE-SET,Lan,DIRECT
