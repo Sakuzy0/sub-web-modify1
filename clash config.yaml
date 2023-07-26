@@ -82,7 +82,7 @@ proxies: null #节点
 
 proxy-groups: #策略组 a4更改为a2，即为手动选择
   - {name: 🌏 全球加速, type: select, proxies: [♻️ 自动选择, 🚀 手动切换, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, 🇺🇲 美国节点, 🇸🇬 狮城节点]}
-  - {name: 🚀 手动切换, <<: *a2}
+  - {name: 🚀 手动切换, <<: *a2, filter: "^[^官|套|ex]*$"}
   - {name: 📺 哔哩哔哩, type: select, proxies: [DIRECT, 🌏 全球加速, 🇭🇰 香港节点, 🇨🇳 台湾节点]}
   - {name: 🪁 微软云盘, type: select, proxies: [🌏 全球加速, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇺🇲 美国节点, 🇸🇬 狮城节点, DIRECT]}
   - {name: 🇭🇰 香港节点, <<: *a2, filter: "港|HK|(?i)Hong"}
@@ -90,7 +90,7 @@ proxy-groups: #策略组 a4更改为a2，即为手动选择
   - {name: 🇺🇲 美国节点, <<: *a2, filter: "美|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|西雅图|芝加哥|US|(?i)States|American"} 
   - {name: 🇨🇳 台湾节点, <<: *a2, filter: "台|湾|新北|TW|(?i)Taiwan"}
   - {name: 🇸🇬 狮城节点, <<: *a2, filter: "新加坡|坡|狮城|SG|(?i)Singapore"}
-  - {name: ♻️ 自动选择, <<: *a4}
+  - {name: ♻️ 自动选择, <<: *a4, filter: "^[^官|套|ex]*$"}
   - {name: 🍎 苹果服务, type: select, proxies: [🌏 全球加速, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, 🇺🇲 美国节点, 🇸🇬 狮城节点, DIRECT]}
   - {name: 🪁 微软服务, type: select, proxies: [🌏 全球加速, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, 🇺🇲 美国节点, 🇸🇬 狮城节点, DIRECT]}
   - {name: 🎮 游戏平台, type: select, proxies: [🌏 全球加速, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, 🇺🇲 美国节点, 🇸🇬 狮城节点, DIRECT]}
