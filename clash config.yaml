@@ -105,7 +105,7 @@ rule-providers: # 分流规则集
   Twitter:     {<<: *a4, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Twitter/Twitter.yaml,                    path: ./ruleset/Twitter.yaml      }
   Game:        {<<: *a4, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Game/Game.yaml,                          path: ./ruleset/Game.yaml         }
   SteamCN:     {<<: *a4, url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/SteamCN/SteamCN.yaml,                    path: ./ruleset/SteamCN.yaml      }
-  AD-White:    {<<: *a5, url: https://ghproxy.com/https://raw.githubusercontent.com/Sakuzy0/sub-web-modify/master/anti-ad-white.yaml,             path: ./ruleset/anti-ad-white.yaml}
+  AD-White:    {<<: *a5, url: https://cdn.jsdelivr.net/gh/Sakuzy0/sub-web-modify@master/anti-ad-white.yaml,                                       path: ./ruleset/anti-ad-white.yaml}
   AD:          {<<: *a5, url: https://anti-ad.net/clash.yaml,                                                                                     path: ./ruleset/anti-ad.yaml      }
 
 rules: #分流规则
