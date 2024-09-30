@@ -1,8 +1,5 @@
 payload:
   - DOMAIN-REGEX,^xlog.jd|e.kuaishou|beizi.biz|adukwai|mobads|joyyrisksdk.*com
-  - DOMAIN-SUFFIX,sentry.io
-  - DOMAIN-SUFFIX,update.liteapks.com
-  - PROCESS-NAME,2345PicViewer.exe
 # 小米防检测
   - DOMAIN-REGEX,^a0.app|mistat.*xiaomi.com
   - DOMAIN-REGEX,^sec|avlyun|umeng|tracking.*miui.com
@@ -14,14 +11,7 @@ payload:
   - DOMAIN-SUFFIX,api.installer.xiaomi.com
   - DOMAIN-SUFFIX,cn.app.chat.xiaomi.net
   - DOMAIN-SUFFIX,etl-xlmc-ssl.sandai.net
-  - PROCESS-NAME,com.miui.analytics
-  - PROCESS-NAME,com.miui.guardprovider
-  - PROCESS-NAME,com.miui.packageinstaller
 # vivo防检测
-  - PROCESS-NAME,com.iqoo.secure
-  - PROCESS-NAME,com.vivo.sdkplugin
-  - PROCESS-NAME,com.bbk.iqoo.logsystem
-  - PROCESS-NAME,com.android.packageinstaller
   - DOMAIN,vhs.wwstat.com
   - DOMAIN,adxlog.vivo.com.cn
   - DOMAIN-SUFFIX,msch.f.360.cn
