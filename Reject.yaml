@@ -1,0 +1,30 @@
+payload:
+  - DOMAIN-REGEX,^xlog.jd|e.kuaishou|beizi.biz|adukwai|mobads|joyyrisksdk.*com,REJECT-DROP # 杂项去广告
+# 小米防检测
+  - DOMAIN-REGEX,^a0.app|mistat.*xiaomi.com,REJECT-DROP
+  - DOMAIN-REGEX,^sec|avlyun|umeng|tracking.*miui.com,REJECT-DROP
+  - DOMAIN-KEYWORD,tmfsdk,REJECT-DROP
+  - DOMAIN-SUFFIX,mpush-api.aliyun.com,REJECT-DROP
+  - DOMAIN-SUFFIX,beacon-api.aliyuncs.com,REJECT-DROP
+  - DOMAIN-SUFFIX,adash-emas.cn-hangzhou.aliyuncs.com,REJECT-DROP
+  - DOMAIN-SUFFIX,ad.xiaomi.com,REJECT-DROP
+  - DOMAIN-SUFFIX,api.installer.xiaomi.com,REJECT-DROP
+  - DOMAIN-SUFFIX,cn.app.chat.xiaomi.net,REJECT-DROP
+  - DOMAIN-SUFFIX,etl-xlmc-ssl.sandai.net,REJECT-DROP
+  - PROCESS-NAME,com.miui.analytics,REJECT-DROP
+  - PROCESS-NAME,com.miui.guardprovider,REJECT-DROP
+  - PROCESS-NAME,com.miui.packageinstaller,REJECT-DROP
+# vivo防检测
+  - PROCESS-NAME,com.iqoo.secure,REJECT-DROP
+  - PROCESS-NAME,com.vivo.sdkplugin,REJECT-DROP
+  - PROCESS-NAME,com.bbk.iqoo.logsystem,REJECT-DROP
+  - PROCESS-NAME,com.android.packageinstaller,REJECT-DROP
+  - DOMAIN,vhs.wwstat.com,REJECT-DROP
+  - DOMAIN,adxlog.vivo.com.cn,REJECT-DROP
+  - DOMAIN-SUFFIX,msch.f.360.cn,REJECT-DROP
+  - DOMAIN-SUFFIX,az.appstore.vivo.com.cn,REJECT-DROP
+  - DOMAIN-SUFFIX,isecure.vivo.com.cn,REJECT-DROP
+  - DOMAIN-SUFFIX,prt-stsdk.vivo.com.cn,REJECT-DROP
+  - DOMAIN-SUFFIX,stinmmtn.vivo.com.cn,REJECT-DROP
+  - IP-CIDR,220.181.128.0/24,REJECT-DROP
+  - IP-CIDR,119.96.201.219/32,REJECT-DROP
