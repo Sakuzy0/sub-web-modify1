@@ -4,6 +4,7 @@ payload:
   - DOMAIN-REGEX,^a0.app|mistat.*xiaomi.com
   - DOMAIN-REGEX,^sec|avlyun|umeng|tracking.*miui.com
   - DOMAIN-KEYWORD,tmfsdk
+  - DOMAIN-KEYWORD,sec.miui.com
   - DOMAIN-SUFFIX,mpush-api.aliyun.com
   - DOMAIN-SUFFIX,beacon-api.aliyuncs.com
   - DOMAIN-SUFFIX,adash-emas.cn-hangzhou.aliyuncs.com
