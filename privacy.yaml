@@ -44,8 +44,9 @@ payload:
   #- DOMAIN-SUFFIX,govo.markiapp.com
   #- DOMAIN-SUFFIX,pushsdk.markiapp.com
   - DOMAIN-SUFFIX,apipubless.markiapp.com
-  - DOMAIN-SUFFIX,data-report.markiapp.com
+  #- DOMAIN-SUFFIX,data-report.markiapp.com
   - DOMAIN-SUFFIX,stat2.openinstall.io
+  - DOMAIN-SUFFIX,stat2.deepinstall.com
   - DOMAIN-SUFFIX,push-api.duowan.com
   - DOMAIN-KEYWORD,sttc-os-lgn
   - DOMAIN-KEYWORD,sttc-lgnsrv
