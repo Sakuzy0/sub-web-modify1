@@ -29,7 +29,7 @@ payload:
   - DOMAIN-KEYWORD,api-access.pangolin
   - DOMAIN-SUFFIX,auni.telecome.cn
   - DOMAIN-SUFFIX,douyinpic.com
-  - DOMAIN-SUFFIX,zijieapi.com
+  #- DOMAIN-SUFFIX,zijieapi.com
   - DOMAIN-KEYWORD,webcast-open
   - DOMAIN-KEYWORD,webcast5-open-lf
   - DOMAIN-SUFFIX,tpns.tencent.com
