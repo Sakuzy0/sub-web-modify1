@@ -39,7 +39,7 @@ payload:
   - DOMAIN-SUFFIX,1rtb.com
   - DOMAIN-SUFFIX,1rtb.net
   - DOMAIN-SUFFIX,bayescom.com
-  - DOMAIN-SUFFIX,biu-cn.dwstatic.com
+  #- DOMAIN-SUFFIX,biu-cn.dwstatic.com
   - DOMAIN-SUFFIX,up.markiapp.com
   - DOMAIN-SUFFIX,govo.markiapp.com
   - DOMAIN-SUFFIX,pushsdk.markiapp.com
@@ -48,6 +48,6 @@ payload:
   - DOMAIN-SUFFIX,stat2.openinstall.io
   - DOMAIN-SUFFIX,stat2.deepinstall.com
   - DOMAIN-SUFFIX,push-api.duowan.com
-  #- DOMAIN-KEYWORD,sttc-os-lgn
-  #- DOMAIN-KEYWORD,sttc-lgnsrv
-  #- DOMAIN-KEYWORD,sttc-gateway
+  - DOMAIN-KEYWORD,sttc-os-lgn
+  - DOMAIN-KEYWORD,sttc-lgnsrv
+  - DOMAIN-KEYWORD,sttc-gateway
