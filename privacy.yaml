@@ -22,3 +22,27 @@ payload:
   - DOMAIN-SUFFIX,stinmmtn.vivo.com.cn
   - IP-CIDR,220.181.128.0/24
   - IP-CIDR,119.96.201.219/32
+# 广告
+  #- DOMAIN-KEYWORD,httpdns
+  - DOMAIN-SUFFIX,update.9mod.com
+  - DOMAIN-SUFFIX,update.liteapks.com
+  - DOMAIN-KEYWORD,api-access.pangolin
+  - DOMAIN-SUFFIX,auni.telecome.cn
+  - DOMAIN-SUFFIX,douyinpic.com
+  - DOMAIN-SUFFIX,zijieapi.com
+  - DOMAIN-KEYWORD,webcast-open
+  - DOMAIN-KEYWORD,webcast5-open-lf
+  - DOMAIN-SUFFIX,tpns.tencent.com
+  - DOMAIN-SUFFIX,dspsdk.pinduoduo.com
+  - DOMAIN-SUFFIX,httpdns.gslb.duowan.com
+  - DOMAIN-SUFFIX,apmplus.volces.com
+  - DOMAIN-SUFFIX,up.markiapp.com
+  - DOMAIN-SUFFIX,govo.markiapp.com
+  - DOMAIN-SUFFIX,pushsdk.markiapp.com
+  - DOMAIN-SUFFIX,apipubless.markiapp.com
+  - DOMAIN-SUFFIX,data-report.markiapp.com
+  - DOMAIN-SUFFIX,stat2.openinstall.io
+  - DOMAIN-SUFFIX,push-api.duowan.com
+  - DOMAIN-KEYWORD,sttc-os-lgn
+  - DOMAIN-KEYWORD,sttc-lgnsrv
+  - DOMAIN-KEYWORD,sttc-gateway
