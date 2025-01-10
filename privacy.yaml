@@ -36,9 +36,13 @@ payload:
   - DOMAIN-SUFFIX,dspsdk.pinduoduo.com
   - DOMAIN-SUFFIX,httpdns.gslb.duowan.com
   - DOMAIN-SUFFIX,apmplus.volces.com
+  - DOMAIN-SUFFIX,1rtb.com
+  - DOMAIN-SUFFIX,1rtb.net
+  - DOMAIN-SUFFIX,bayescom.com
+  - DOMAIN-SUFFIX,biu-cn.dwstatic.com
   - DOMAIN-SUFFIX,up.markiapp.com
-  - DOMAIN-SUFFIX,govo.markiapp.com
-  - DOMAIN-SUFFIX,pushsdk.markiapp.com
+  #- DOMAIN-SUFFIX,govo.markiapp.com
+  #- DOMAIN-SUFFIX,pushsdk.markiapp.com
   - DOMAIN-SUFFIX,apipubless.markiapp.com
   - DOMAIN-SUFFIX,data-report.markiapp.com
   - DOMAIN-SUFFIX,stat2.openinstall.io
