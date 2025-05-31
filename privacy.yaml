@@ -24,6 +24,7 @@ payload:
   - IP-CIDR,119.96.201.219/32
 # 广告
   #- DOMAIN-KEYWORD,httpdns
+  - DOMAIN-SUFFIX,zhangyuyidong.cn
   - DOMAIN-SUFFIX,update.9mod.com
   - DOMAIN-SUFFIX,update.liteapks.com
   - DOMAIN-KEYWORD,api-access.pangolin
