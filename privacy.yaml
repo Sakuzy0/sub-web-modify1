@@ -12,6 +12,10 @@ payload:
   - DOMAIN-SUFFIX,api.installer.xiaomi.com
   - DOMAIN-SUFFIX,cn.app.chat.xiaomi.net
   - DOMAIN-SUFFIX,etl-xlmc-ssl.sandai.net
+  - PROCESS-NAME,com.miui.analytics
+  - PROCESS-NAME,com.miui.guardprovider
+  - PROCESS-NAME,com.miui.packageinstaller
+  - PROCESS-NAME,com.miui.securitymanager
 # vivo防检测
   - DOMAIN,vhs.wwstat.com
   - DOMAIN,adxlog.vivo.com.cn
@@ -22,8 +26,14 @@ payload:
   - DOMAIN-SUFFIX,stinmmtn.vivo.com.cn
   - IP-CIDR,220.181.128.0/24
   - IP-CIDR,119.96.201.219/32
+  - PROCESS-NAME,com.iqoo.secure
+  - PROCESS-NAME,com.vivo.sdkplugin
+  - PROCESS-NAME,com.bbk.iqoo.logsystem
+  - PROCESS-NAME,com.android.packageinstaller
 # 广告
   #- DOMAIN-KEYWORD,httpdns
+  - DOMAIN-SUFFIX,sentry.io
+  - DOMAIN-SUFFIX,black.qimo.ink
   - DOMAIN-SUFFIX,zhangyuyidong.cn
   - DOMAIN-SUFFIX,update.9mod.com
   - DOMAIN-SUFFIX,update.liteapks.com
@@ -52,3 +62,4 @@ payload:
   - DOMAIN-KEYWORD,sttc-os-lgn
   - DOMAIN-KEYWORD,sttc-lgnsrv
   - DOMAIN-KEYWORD,sttc-gateway
+
