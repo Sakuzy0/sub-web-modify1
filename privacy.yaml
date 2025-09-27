@@ -16,6 +16,7 @@ payload:
   - PROCESS-NAME,com.miui.guardprovider
   - PROCESS-NAME,com.miui.packageinstaller
   - PROCESS-NAME,com.miui.securitymanager
+  - PROCESS-NAME,com.miui.securitycore
 # vivo防检测
   - DOMAIN,vhs.wwstat.com
   - DOMAIN,adxlog.vivo.com.cn
@@ -62,3 +63,4 @@ payload:
   - DOMAIN-KEYWORD,sttc-os-lgn
   - DOMAIN-KEYWORD,sttc-lgnsrv
   - DOMAIN-KEYWORD,sttc-gateway
+
