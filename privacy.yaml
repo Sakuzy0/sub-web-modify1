@@ -33,6 +33,7 @@ payload:
   - PROCESS-NAME,com.android.packageinstaller
 # 广告
   #- DOMAIN-KEYWORD,httpdns
+  - DOMAIN-SUFFIX,ssp-sdk-status.jiguang.cn
   - DOMAIN-SUFFIX,zztfly.com
   - DOMAIN-SUFFIX,halomobi.com
   - DOMAIN-SUFFIX,tianmu.mobi
@@ -68,6 +69,7 @@ payload:
   - DOMAIN-KEYWORD,sttc-os-lgn
   - DOMAIN-KEYWORD,sttc-lgnsrv
   - DOMAIN-KEYWORD,sttc-gateway
+
 
 
 
