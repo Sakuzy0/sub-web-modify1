@@ -33,6 +33,7 @@ payload:
   - PROCESS-NAME,com.android.packageinstaller
 # 广告
   #- DOMAIN-KEYWORD,httpdns
+  - DOMAIN-SUFFIX,tianmu.mobi
   - DOMAIN-SUFFIX,adkwai.com
   - DOMAIN-SUFFIX,adx-tk-sz.metricslinks.com
   - DOMAIN-SUFFIX,sentry.io
@@ -65,5 +66,6 @@ payload:
   - DOMAIN-KEYWORD,sttc-os-lgn
   - DOMAIN-KEYWORD,sttc-lgnsrv
   - DOMAIN-KEYWORD,sttc-gateway
+
 
 
