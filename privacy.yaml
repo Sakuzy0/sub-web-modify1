@@ -33,6 +33,7 @@ payload:
   - PROCESS-NAME,com.android.packageinstaller
 # 广告
   #- DOMAIN-KEYWORD,httpdns
+  - DOMAIN-SUFFIX,lf9-ad-union-sdk.pglstatp-toutiao.com
   - DOMAIN-SUFFIX,xdrig.com
   - DOMAIN-SUFFIX,sigmob.cn
   - DOMAIN-SUFFIX,dutils.com
@@ -72,6 +73,7 @@ payload:
   - DOMAIN-KEYWORD,sttc-os-lgn
   - DOMAIN-KEYWORD,sttc-lgnsrv
   - DOMAIN-KEYWORD,sttc-gateway
+
 
 
 
