@@ -4,7 +4,7 @@
 # 更新时间: 2026-02-26
 # ==========================================
 payload:
-  # -> 泛域名后缀匹配 (级别最高)
+  # -> 泛域名后缀匹配
   - DOMAIN-SUFFIX,httpdns.baidu.com
   - DOMAIN-SUFFIX,httpdns.baidubce.com
   - DOMAIN-SUFFIX,httpdns.pro
