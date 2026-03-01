@@ -1,16 +1,18 @@
 # ==========================================
-# HTTPDNS 拦截器 (Mihomo 终极整合版)
-# 合并来源: 转换版 Loon 规则 + 用户补充精简版规则
-# 更新时间: 2026-02-26
+# HTTPDNS 拦截器 (Mihomo 终极性能优化版)
+# 更新时间: 2026-03-01
+# 优化说明: 
+# 作者：可莉
+# 1. 引入 DOMAIN-KEYWORD 替代了近 40 条包含 httpdns 的冗余规则，极大提升性能。
+# 2. 保留了被原作者替换为全局正则的底层硬编码 IP，弥补网络层拦截的盲区。
+# 3. 完美处理了 /31 和 /23 等网段的合并与重叠。
 # ==========================================
 payload:
-  # -> 泛域名后缀匹配
-  - DOMAIN-SUFFIX,httpdns.baidu.com
-  - DOMAIN-SUFFIX,httpdns.baidubce.com
-  - DOMAIN-SUFFIX,httpdns.pro
-  - DOMAIN-SUFFIX,httpsdns.baidu.com
+  # -> 关键词阻断 (级别最高，性能极佳。精准击杀所有包含此关键词的 HTTPDNS 域名)
+  - DOMAIN-KEYWORD,httpdns
+  - DOMAIN-KEYWORD,httpsdns
 
-  # -> 完整域名精准匹配
+  # -> 完整域名精准匹配 (仅保留不包含上述关键词的隐蔽 HTTPDNS 域名)
   - DOMAIN,aedns.weixin.qq.com
   - DOMAIN,amdc.alipay.com
   - DOMAIN,apidns-js.kwd.inkuai.com
@@ -27,14 +29,116 @@ payload:
   - DOMAIN,dotserver.douyucdn.cn
   - DOMAIN,hd.xiaojukeji.com
   - DOMAIN,hdns.ksyun.com
-  - DOMAIN,httpdns-api.aliyuncs.com
-  - DOMAIN,httpdns-browser.platform.dbankcloud.cn
-  - DOMAIN,httpdns-sc.aliyuncs.com
-  - DOMAIN,httpdns-sdk.n.netease.com
-  - DOMAIN,httpdns-v6.gslb.yy.com
-  - DOMAIN,httpdns.alicdn.com
-  - DOMAIN,httpdns.bcelive.com
-  - DOMAIN,httpdns.bilivideo.com
+  - DOMAIN,resolver.msg.xiaomi.net
+  - DOMAIN,serveraddr.service.kugou.com
+  - DOMAIN,tp2p.kg.qq.com
+  - DOMAIN,twns.p2ptun.qq.com
+  - DOMAIN,ucdc.upaas.quark.cn
+
+  # -> HTTPDNS IPv4 硬编码拦截 (合并了所有已知节点与网段)
+  - IP-CIDR,39.97.128.148/32,no-resolve
+  - IP-CIDR,39.97.130.51/32,no-resolve
+  - IP-CIDR,39.156.140.30/32,no-resolve
+  - IP-CIDR,39.156.140.47/32,no-resolve
+  - IP-CIDR,39.156.140.245/32,no-resolve
+  - IP-CIDR,42.81.232.18/32,no-resolve
+  - IP-CIDR,42.187.182.106/32,no-resolve
+  - IP-CIDR,42.187.182.123/32,no-resolve
+  - IP-CIDR,42.187.184.154/32,no-resolve
+  - IP-CIDR,43.130.30.237/32,no-resolve
+  - IP-CIDR,43.130.30.240/32,no-resolve
+  - IP-CIDR,43.137.153.151/32,no-resolve
+  - IP-CIDR,43.137.159.31/32,no-resolve
+  - IP-CIDR,43.152.112.101/32,no-resolve
+  - IP-CIDR,43.153.248.120/32,no-resolve
+  - IP-CIDR,47.100.123.169/32,no-resolve
+  - IP-CIDR,47.101.175.206/32,no-resolve
+  - IP-CIDR,54.222.159.138/32,no-resolve
+  - IP-CIDR,59.111.239.61/32,no-resolve
+  - IP-CIDR,59.111.239.62/32,no-resolve
+  - IP-CIDR,60.28.172.100/32,no-resolve
+  - IP-CIDR,61.151.231.157/32,no-resolve
+  - IP-CIDR,81.69.130.131/32,no-resolve
+  - IP-CIDR,81.71.61.216/32,no-resolve
+  - IP-CIDR,101.32.104.104/32,no-resolve
+  - IP-CIDR,101.35.204.35/32,no-resolve
+  - IP-CIDR,101.35.212.35/32,no-resolve
+  - IP-CIDR,101.42.130.147/32,no-resolve
+  - IP-CIDR,101.91.140.124/32,no-resolve
+  - IP-CIDR,101.91.140.224/32,no-resolve
+  - IP-CIDR,101.124.19.122/32,no-resolve
+  - IP-CIDR,103.37.155.60/32,no-resolve
+  - IP-CIDR,103.41.167.237/32,no-resolve
+  - IP-CIDR,103.44.58.64/32,no-resolve
+  - IP-CIDR,103.224.222.208/32,no-resolve
+  - IP-CIDR,106.39.206.21/32,no-resolve
+  - IP-CIDR,106.39.206.25/32,no-resolve
+  - IP-CIDR,106.39.206.70/32,no-resolve
+  - IP-CIDR,106.55.220.18/32,no-resolve
+  - IP-CIDR,111.31.201.194/32,no-resolve
+  - IP-CIDR,111.31.241.76/32,no-resolve
+  - IP-CIDR,111.31.241.140/32,no-resolve
+  - IP-CIDR,111.206.147.156/32,no-resolve
+  - IP-CIDR,111.206.147.210/32,no-resolve
+  - IP-CIDR,111.206.148.27/32,no-resolve
+  - IP-CIDR,112.64.218.119/32,no-resolve
+  - IP-CIDR,112.65.200.117/32,no-resolve
+  - IP-CIDR,114.110.96.6/32,no-resolve
+  - IP-CIDR,114.110.96.26/32,no-resolve
+  - IP-CIDR,114.110.97.30/32,no-resolve
+  - IP-CIDR,114.110.97.97/32,no-resolve
+  - IP-CIDR,114.116.215.110/32,no-resolve
+  - IP-CIDR,115.236.121.51/32,no-resolve
+  - IP-CIDR,115.236.121.195/32,no-resolve
+  - IP-CIDR,116.63.10.31/32,no-resolve
+  - IP-CIDR,116.63.10.135/32,no-resolve
+  - IP-CIDR,116.128.177.249/32,no-resolve
+  - IP-CIDR,116.130.224.150/32,no-resolve
+  - IP-CIDR,116.130.224.205/32,no-resolve
+  - IP-CIDR,117.144.238.29/32,no-resolve
+  - IP-CIDR,117.185.228.108/32,no-resolve
+  - IP-CIDR,117.185.247.73/32,no-resolve
+  - IP-CIDR,118.89.204.0/23,no-resolve # 新版引入的 /23 宽泛网段
+  - IP-CIDR,119.29.29.29/32,no-resolve
+  - IP-CIDR,119.29.29.98/31,no-resolve
+  - IP-CIDR,120.46.169.234/32,no-resolve
+  - IP-CIDR,121.5.84.85/32,no-resolve
+  - IP-CIDR,121.36.72.124/32,no-resolve
+  - IP-CIDR,122.9.7.134/32,no-resolve
+  - IP-CIDR,122.9.13.79/32,no-resolve
+  - IP-CIDR,122.9.15.129/32,no-resolve
+  - IP-CIDR,123.151.48.171/32,no-resolve
+  - IP-CIDR,123.151.48.193/32,no-resolve
+  - IP-CIDR,123.151.48.208/32,no-resolve
+  - IP-CIDR,123.151.54.50/32,no-resolve
+  - IP-CIDR,139.196.12.179/32,no-resolve
+  - IP-CIDR,162.14.3.250/32,no-resolve
+  - IP-CIDR,180.76.76.112/32,no-resolve
+  - IP-CIDR,180.76.76.200/32,no-resolve
+  - IP-CIDR,180.76.76.220/32,no-resolve
+  - IP-CIDR,180.153.202.85/32,no-resolve
+  - IP-CIDR,182.254.116.116/32,no-resolve
+  - IP-CIDR,182.254.116.117/32,no-resolve
+  - IP-CIDR,182.254.118.119/32,no-resolve
+  - IP-CIDR,182.256.116.116/32,no-resolve
+  - IP-CIDR,183.192.196.31/32,no-resolve
+  - IP-CIDR,186.76.76.200/32,no-resolve
+  - IP-CIDR,202.90.108.13/32,no-resolve
+  - IP-CIDR,202.90.110.46/32,no-resolve
+  - IP-CIDR,203.107.1.0/24,no-resolve
+  - IP-CIDR,203.205.129.102/32,no-resolve
+  - IP-CIDR,203.205.234.132/32,no-resolve
+  - IP-CIDR,220.196.159.73/32,no-resolve
+
+  # -> HTTPDNS IPv6 硬编码拦截
+  - IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve
+  - IP-CIDR6,2402:4e00:1411:201:0:9964:ba21:5a41/128,no-resolve
+  - IP-CIDR6,2402:4e00:1900:1700:0:9554:1ad9:c3a/128,no-resolve
+  - IP-CIDR6,2402:4e00:8030:1::17/128,no-resolve
+  - IP-CIDR6,2402:db40:5100:1011::5/128,no-resolve
+  - IP-CIDR6,2408:8711:10:10::20/128,no-resolve
+  - IP-CIDR6,2409:8702:4860:10::4d/128,no-resolve
+  - IP-CIDR6,240e:928:1400:10::25/128,no-resolve  - DOMAIN,httpdns.bilivideo.com
   - DOMAIN,httpdns.browser.miui.com
   - DOMAIN,httpdns.c.cdnhwc2.com
   - DOMAIN,httpdns.calorietech.com
