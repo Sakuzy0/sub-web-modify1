@@ -4,14 +4,12 @@ payload:
   - DOMAIN-REGEX,^a0.app|mistat.*xiaomi.com
   - DOMAIN-REGEX,^sec|avlyun|umeng|tracking.*miui.com
   - DOMAIN-KEYWORD,tmfsdk
-  - DOMAIN-KEYWORD,sec.miui.com
   - DOMAIN-SUFFIX,mpush-api.aliyun.com
   - DOMAIN-SUFFIX,beacon-api.aliyuncs.com
   - DOMAIN-SUFFIX,adash-emas.cn-hangzhou.aliyuncs.com
   - DOMAIN-SUFFIX,ad.xiaomi.com
   - DOMAIN-SUFFIX,api.installer.xiaomi.com
   - DOMAIN-SUFFIX,cn.app.chat.xiaomi.net
-  - DOMAIN-SUFFIX,etl-xlmc-ssl.sandai.net
   - PROCESS-NAME,com.miui.analytics
   - PROCESS-NAME,com.miui.guardprovider
   - PROCESS-NAME,com.miui.packageinstaller
@@ -32,7 +30,6 @@ payload:
   - PROCESS-NAME,com.bbk.iqoo.logsystem
   - PROCESS-NAME,com.android.packageinstaller
 # 广告
-  #- DOMAIN-KEYWORD,httpdns
   - DOMAIN-SUFFIX,lf9-ad-union-sdk.pglstatp-toutiao.com
   - DOMAIN-SUFFIX,xdrig.com
   - DOMAIN-SUFFIX,sigmob.cn
@@ -50,13 +47,10 @@ payload:
   - DOMAIN-SUFFIX,update.liteapks.com
   - DOMAIN-KEYWORD,api-access.pangolin
   - DOMAIN-SUFFIX,auni.telecome.cn
-  - DOMAIN-SUFFIX,douyinpic.com
-  #- DOMAIN-SUFFIX,zijieapi.com
   - DOMAIN-KEYWORD,webcast-open
   - DOMAIN-KEYWORD,webcast5-open-lf
   - DOMAIN-SUFFIX,tpns.tencent.com
   - DOMAIN-SUFFIX,dspsdk.pinduoduo.com
-  - DOMAIN-SUFFIX,httpdns.gslb.duowan.com
   - DOMAIN-SUFFIX,apmplus.volces.com
   - DOMAIN-SUFFIX,1rtb.com
   - DOMAIN-SUFFIX,1rtb.net
@@ -73,6 +67,7 @@ payload:
   - DOMAIN-KEYWORD,sttc-os-lgn
   - DOMAIN-KEYWORD,sttc-lgnsrv
   - DOMAIN-KEYWORD,sttc-gateway
+
 
 
 
