@@ -33,9 +33,7 @@ payload:
   - PROCESS-NAME,com.android.packageinstaller
 # 广告
   - DOMAIN-SUFFIX,lf9-ad-union-sdk.pglstatp-toutiao.com
-  - DOMAIN,log2.cmpassport.com
-  - DOMAIN,cpc-service-square.iggrowth.cn
-  - DOMAIN,admin.hzjizhun.cn
+  - DOMAIN-SUFFIX,58iclick.com
   - DOMAIN-SUFFIX,tuia.cn
   - DOMAIN-SUFFIX,oceanengine.com
   - DOMAIN-SUFFIX,gdt.qq.com
@@ -57,7 +55,7 @@ payload:
   - DOMAIN-SUFFIX,black.qimo.ink
   - DOMAIN-SUFFIX,zhangyuyidong.cn
   - DOMAIN-SUFFIX,update.9mod.com
-  - DOMAIN-SUFFIX,update.liteapks.com
+  - DMAIN-SUFFIX,update.liteapks.com
   - DOMAIN-KEYWORD,api-access.pangolin
   - DOMAIN-SUFFIX,auni.telecome.cn
   - DOMAIN-KEYWORD,webcast-open
@@ -80,6 +78,9 @@ payload:
   - DOMAIN-KEYWORD,sttc-os-lgn
   - DOMAIN-KEYWORD,sttc-lgnsrv
   - DOMAIN-KEYWORD,sttc-gateway
+  - DOMAIN,log2.cmpassport.com
+  - DOMAIN,cpc-service-square.iggrowth.cn
+  - DOMAIN,admin.hzjizhun.cn
 
 
 
