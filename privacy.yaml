@@ -45,7 +45,8 @@ payload:
   - DOMAIN-SUFFIX,xdrig.com
   - DOMAIN-SUFFIX,sigmob.cn
   - DOMAIN-SUFFIX,dutils.com
-  - DOMAIN-SUFFIX,ssp-sdk-status.jiguang.cn
+  - DOMAIN-SUFFIX,jiguang.cn
+  - DOMAIN-SUFFIX,jpush.cn
   - DOMAIN-SUFFIX,zztfly.com
   - DOMAIN-SUFFIX,halomobi.com
   - DOMAIN-SUFFIX,tianmu.mobi
