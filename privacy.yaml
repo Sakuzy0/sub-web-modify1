@@ -56,7 +56,7 @@ payload:
   - DOMAIN-SUFFIX,black.qimo.ink
   - DOMAIN-SUFFIX,zhangyuyidong.cn
   - DOMAIN-SUFFIX,update.9mod.com
-  - DMAIN-SUFFIX,update.liteapks.com
+  - DOMAIN-SUFFIX,update.liteapks.com
   - DOMAIN-KEYWORD,api-access.pangolin
   - DOMAIN-SUFFIX,auni.telecome.cn
   - DOMAIN-KEYWORD,webcast-open
