@@ -33,6 +33,9 @@ payload:
   - PROCESS-NAME,com.android.packageinstaller
 # 广告
   - DOMAIN-SUFFIX,lf9-ad-union-sdk.pglstatp-toutiao.com
+  - DOMAIN,cpc-service-square.iggrowth.cn
+  - DOMAIN,admin.hzjizhun.cn
+  - DOMAIN-SUFFIX,oceanengine.com
   - DOMAIN-SUFFIX,gdt.qq.com
   - DOMAIN-SUFFIX,datanexus.qq.com
   - DOMAIN-SUFFIX,statisticslinks.com
@@ -47,7 +50,7 @@ payload:
   - DOMAIN-SUFFIX,halomobi.com
   - DOMAIN-SUFFIX,tianmu.mobi
   - DOMAIN-SUFFIX,adkwai.com
-  - DOMAIN-SUFFIX,adx-tk-sz.metricslinks.com
+  - DOMAIN-SUFFIX,metricslinks.com
   - DOMAIN-SUFFIX,sentry.io
   - DOMAIN-SUFFIX,black.qimo.ink
   - DOMAIN-SUFFIX,zhangyuyidong.cn
@@ -56,7 +59,7 @@ payload:
   - DOMAIN-KEYWORD,api-access.pangolin
   - DOMAIN-SUFFIX,auni.telecome.cn
   - DOMAIN-KEYWORD,webcast-open
-  - DOMAIN-KEYWORD,webcast5-open-lf
+  - DOMAIN-KEYWORD,webcast5-open
   - DOMAIN-SUFFIX,tpns.tencent.com
   - DOMAIN-SUFFIX,dspsdk.pinduoduo.com
   - DOMAIN-SUFFIX,apmplus.volces.com
