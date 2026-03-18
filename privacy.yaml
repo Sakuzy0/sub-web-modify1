@@ -33,6 +33,11 @@ payload:
   - PROCESS-NAME,com.android.packageinstaller
 # 广告
   - DOMAIN-SUFFIX,lf9-ad-union-sdk.pglstatp-toutiao.com
+  - DOMAIN-SUFFIX,datanexus.qq.com
+  - DOMAIN-SUFFIX,statisticslinks.com
+  - DOMAIN-SUFFIX,anythinktech.com
+  - DOMAIN-SUFFIX,yunxish.com
+  - DOMAIN-SUFFIX,getui.com
   - DOMAIN-SUFFIX,xdrig.com
   - DOMAIN-SUFFIX,sigmob.cn
   - DOMAIN-SUFFIX,dutils.com
