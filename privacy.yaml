@@ -70,6 +70,7 @@ payload:
   - DOMAIN-SUFFIX,biu-cn.dwstatic.com
   - DOMAIN-SUFFIX,up.markiapp.com
   - DOMAIN-SUFFIX,govo.markiapp.com
+  - DOMAIN-SUFFIX,push.markiapp.com
   - DOMAIN-SUFFIX,pushsdk.markiapp.com
   - DOMAIN-SUFFIX,apipubless.markiapp.com
   - DOMAIN-SUFFIX,data-report.markiapp.com
