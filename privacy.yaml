@@ -5,11 +5,11 @@ payload:
   - DOMAIN-REGEX,^sec|avlyun|umeng|tracking.*miui.com
   - DOMAIN-KEYWORD,tmfsdk
   - DOMAIN-KEYWORD,sec.miui.com
+  - DOMAIN-SUFFIX,ad.xiaomi.com
   - DOMAIN-SUFFIX,etl-xlmc-ssl.sandai.net
   - DOMAIN-SUFFIX,mpush-api.aliyun.com
   - DOMAIN-SUFFIX,beacon-api.aliyuncs.com
   - DOMAIN-SUFFIX,adash-emas.cn-hangzhou.aliyuncs.com
-  - DOMAIN-SUFFIX,ad.xiaomi.com
   - DOMAIN-SUFFIX,api.installer.xiaomi.com
   - DOMAIN-SUFFIX,cn.app.chat.xiaomi.net
   - PROCESS-NAME,com.miui.analytics
@@ -57,10 +57,7 @@ payload:
   - DOMAIN-SUFFIX,zhangyuyidong.cn
   - DOMAIN-SUFFIX,update.9mod.com
   - DOMAIN-SUFFIX,update.liteapks.com
-  - DOMAIN-KEYWORD,api-access.pangolin
   - DOMAIN-SUFFIX,auni.telecome.cn
-  - DOMAIN-KEYWORD,webcast-open
-  - DOMAIN-KEYWORD,webcast5-open
   - DOMAIN-SUFFIX,tpns.tencent.com
   - DOMAIN-SUFFIX,dspsdk.pinduoduo.com
   - DOMAIN-SUFFIX,apmplus.volces.com
@@ -80,10 +77,13 @@ payload:
   - DOMAIN-KEYWORD,sttc-os-lgn
   - DOMAIN-KEYWORD,sttc-lgnsrv
   - DOMAIN-KEYWORD,sttc-gateway
+  - DOMAIN-KEYWORD,api-access.pangolin
+  - DOMAIN-KEYWORD,webcast-open
+  - DOMAIN-KEYWORD,webcast5-open
+  - DOMAIN,id6.me
   - DOMAIN,log2.cmpassport.com
   - DOMAIN,cpc-service-square.iggrowth.cn
   - DOMAIN,admin.hzjizhun.cn
-  - DOMAIN,id6.me
   - DOMAIN,data-report-config.zbisq.com
 
 
