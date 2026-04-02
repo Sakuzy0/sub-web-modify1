@@ -32,6 +32,8 @@ payload:
   - PROCESS-NAME,com.bbk.iqoo.logsystem
   - PROCESS-NAME,com.android.packageinstaller
 # 广告
+  - DOMAIN-SUFFIX,gdtimg.com
+  - DOMAIN-SUFFIX,yfanads.com
   - DOMAIN-SUFFIX,lf9-ad-union-sdk.pglstatp-toutiao.com
   - DOMAIN-SUFFIX,58iclick.com
   - DOMAIN-SUFFIX,tuia.cn
@@ -80,6 +82,9 @@ payload:
   - DOMAIN-KEYWORD,api-access.pangolin
   - DOMAIN-KEYWORD,webcast-open
   - DOMAIN-KEYWORD,webcast5-open
+  - DOMAIN,clickdsp.meituan.com
+  - DOMAIN,s3plus.meituan.net
+  - DOMAIN,pms-zeus-xcdn.bdstatic.com
   - DOMAIN,id6.me
   - DOMAIN,log2.cmpassport.com
   - DOMAIN,cpc-service-square.iggrowth.cn
