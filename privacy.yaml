@@ -83,7 +83,6 @@ payload:
   - DOMAIN-KEYWORD,webcast-open
   - DOMAIN-KEYWORD,webcast5-open
   - DOMAIN,clickdsp.meituan.com
-  - DOMAIN,s3plus.meituan.net
   - DOMAIN,pms-zeus-xcdn.bdstatic.com
   - DOMAIN,id6.me
   - DOMAIN,log2.cmpassport.com
