@@ -2,9 +2,8 @@ payload:
   - DOMAIN-REGEX,^xlog.jd|e.kuaishou|beizi.biz|adukwai|mobads|joyyrisksdk.*com
 # 小米防检测
   - DOMAIN-REGEX,^a0.app|mistat.*xiaomi.com
-  - DOMAIN-REGEX,^sec|avlyun|umeng|tracking.*miui.com
   - DOMAIN-KEYWORD,tmfsdk
-  - DOMAIN-KEYWORD,sec.miui.com
+  - DOMAIN-SUFFIX,sec.miui.com
   - DOMAIN-SUFFIX,ad.xiaomi.com
   - DOMAIN-SUFFIX,etl-xlmc-ssl.sandai.net
   - DOMAIN-SUFFIX,mpush-api.aliyun.com
