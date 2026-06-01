@@ -33,7 +33,7 @@ payload:
 # 广告
   - DOMAIN-SUFFIX,gdtimg.com
   - DOMAIN-SUFFIX,yfanads.com
-  - DOMAIN-SUFFIX,lf9-ad-union-sdk.pglstatp-toutiao.com
+  - DOMAIN-SUFFIX,pglstatp-toutiao.com
   - DOMAIN-SUFFIX,58iclick.com
   - DOMAIN-SUFFIX,tuia.cn
   - DOMAIN-SUFFIX,oceanengine.com
