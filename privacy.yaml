@@ -31,6 +31,8 @@ payload:
   - PROCESS-NAME,com.bbk.iqoo.logsystem
   - PROCESS-NAME,com.android.packageinstaller
 # 广告
+  - DOMAIN-SUFFIX,metrics-ad-drcn.dt.hihonorcloud.com
+  - DOMAIN-SUFFIX,tracking.ads.honor.com
   - DOMAIN-SUFFIX,pull.etoote.com
   - DOMAIN-SUFFIX,dashisx.com
   - DOMAIN-SUFFIX,baihemob.com
