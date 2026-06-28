@@ -1,10 +1,12 @@
 payload:
-  - DOMAIN-REGEX,^xlog.jd|e.kuaishou|beizi.biz|adukwai|mobads|joyyrisksdk.*com
 # 小米防检测
-  - DOMAIN-REGEX,^a0.app|mistat.*xiaomi.com
   - DOMAIN-KEYWORD,tmfsdk
+  - DOMAIN-SUFFIX,a0.app.xiaomi.com
+  - DOMAIN-SUFFIX,mistat.xiaomi.com
   - DOMAIN-SUFFIX,sec.miui.com
+  - DOMAIN-SUFFIX,sec.intl.miui.com
   - DOMAIN-SUFFIX,ad.xiaomi.com
+  - DOMAIN-SUFFIX,ads.xiaomi.com
   - DOMAIN-SUFFIX,etl-xlmc-ssl.sandai.net
   - DOMAIN-SUFFIX,mpush-api.aliyun.com
   - DOMAIN-SUFFIX,beacon-api.aliyuncs.com
@@ -31,6 +33,13 @@ payload:
   - PROCESS-NAME,com.bbk.iqoo.logsystem
   - PROCESS-NAME,com.android.packageinstaller
 # 广告
+  - DOMAIN-SUFFIX,beizi.biz.com
+  - DOMAIN-SUFFIX,adukwai.com
+  - DOMAIN-SUFFIX,adkwai.com
+  - DOMAIN-SUFFIX,mobads.com
+  - DOMAIN-SUFFIX,joyyrisksdk.com
+  - DOMAIN-SUFFIX,e.kuaishou.com
+  - DOMAIN-SUFFIX,xlog.jd.com
   - DOMAIN-SUFFIX,voiceads.cn
   - DOMAIN-SUFFIX,metrics-ad-drcn.dt.hihonorcloud.com
   - DOMAIN-SUFFIX,tracking.ads.honor.com
@@ -60,7 +69,6 @@ payload:
   - DOMAIN-SUFFIX,zztfly.com
   - DOMAIN-SUFFIX,halomobi.com
   - DOMAIN-SUFFIX,tianmu.mobi
-  - DOMAIN-SUFFIX,adkwai.com
   - DOMAIN-SUFFIX,metricslinks.com
   - DOMAIN-SUFFIX,sentry.io
   - DOMAIN-SUFFIX,black.qimo.ink
@@ -84,19 +92,19 @@ payload:
   - DOMAIN-SUFFIX,stat2.openinstall.io
   - DOMAIN-SUFFIX,stat2.deepinstall.com
   - DOMAIN-SUFFIX,push-api.duowan.com
+  - DOMAIN,id6.me
+  - DOMAIN,clickdsp.meituan.com
+  - DOMAIN,pms-zeus-xcdn.bdstatic.com
+  - DOMAIN,log2.cmpassport.com
+  - DOMAIN,cpc-service-square.iggrowth.cn
+  - DOMAIN,admin.hzjizhun.cn
+  - DOMAIN,data-report-config.zbisq.com
   - DOMAIN-KEYWORD,sttc-os-lgn
   - DOMAIN-KEYWORD,sttc-lgnsrv
   - DOMAIN-KEYWORD,sttc-gateway
   - DOMAIN-KEYWORD,api-access.pangolin
   - DOMAIN-KEYWORD,webcast-open
   - DOMAIN-KEYWORD,webcast5-open
-  - DOMAIN,clickdsp.meituan.com
-  - DOMAIN,pms-zeus-xcdn.bdstatic.com
-  - DOMAIN,id6.me
-  - DOMAIN,log2.cmpassport.com
-  - DOMAIN,cpc-service-square.iggrowth.cn
-  - DOMAIN,admin.hzjizhun.cn
-  - DOMAIN,data-report-config.zbisq.com
 
 
 
