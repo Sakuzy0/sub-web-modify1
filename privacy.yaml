@@ -33,6 +33,7 @@ payload:
   - PROCESS-NAME,com.bbk.iqoo.logsystem
   - PROCESS-NAME,com.android.packageinstaller
 # 广告
+  - DOMAIN-SUFFIX,mssdk.volces.com
   - DOMAIN-SUFFIX,beizi.biz.com
   - DOMAIN-SUFFIX,adukwai.com
   - DOMAIN-SUFFIX,adkwai.com
@@ -55,6 +56,7 @@ payload:
   - DOMAIN-SUFFIX,58iclick.com
   - DOMAIN-SUFFIX,tuia.cn
   - DOMAIN-SUFFIX,oceanengine.com
+  - DOMAIN-SUFFIX,sdk.e.qq.com
   - DOMAIN-SUFFIX,gdt.qq.com
   - DOMAIN-SUFFIX,datanexus.qq.com
   - DOMAIN-SUFFIX,statisticslinks.com
