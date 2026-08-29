@@ -7,7 +7,7 @@ payload:
   - DOMAIN-SUFFIX,sec.intl.miui.com
   - DOMAIN-SUFFIX,ad.xiaomi.com
   - DOMAIN-SUFFIX,ads.xiaomi.com
-  - DOMAIN-SUFFIX,etl-xlmc-ssl.sandai.net
+  #- DOMAIN-SUFFIX,etl-xlmc-ssl.sandai.net
   - DOMAIN-SUFFIX,mpush-api.aliyun.com
   - DOMAIN-SUFFIX,beacon-api.aliyuncs.com
   - DOMAIN-SUFFIX,adash-emas.cn-hangzhou.aliyuncs.com
@@ -33,6 +33,9 @@ payload:
   - PROCESS-NAME,com.bbk.iqoo.logsystem
   - PROCESS-NAME,com.android.packageinstaller
 # 广告
+  - DOMAIN-SUFFIX,vungle.com
+  - DOMAIN-SUFFIX,adjust.com
+  - DOMAIN-SUFFIX,taboola.com
   - DOMAIN-SUFFIX,mssdk.volces.com
   - DOMAIN-SUFFIX,beizi.biz.com
   - DOMAIN-SUFFIX,adukwai.com
