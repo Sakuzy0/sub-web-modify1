@@ -33,6 +33,7 @@ payload:
   - PROCESS-NAME,com.bbk.iqoo.logsystem
   - PROCESS-NAME,com.android.packageinstaller
 # 广告
+  - DOMAIN-SUFFIX,datadoghq.com
   - DOMAIN-SUFFIX,vungle.com
   - DOMAIN-SUFFIX,adjust.com
   - DOMAIN-SUFFIX,taboola.com
