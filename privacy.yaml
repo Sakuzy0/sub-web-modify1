@@ -1,6 +1,7 @@
 payload:
 # 小米防检测
   - DOMAIN-KEYWORD,tmfsdk
+  - DOMAIN-SUFFIX,dm.wo.com.cn
   - DOMAIN-SUFFIX,a0.app.xiaomi.com
   - DOMAIN-SUFFIX,mistat.xiaomi.com
   - DOMAIN-SUFFIX,sec.miui.com
